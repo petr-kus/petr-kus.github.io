@@ -7,7 +7,6 @@
 :width: 100px
 :alt: Petr Kus profile photo 2024
 :align: right
-Petr Kus (2025)
 ```
 :::
 :::{grid-item}
