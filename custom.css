@@ -1,5 +1,10 @@
 /* Hide MyST branding elements */
 
+/* Hide all elements with text-md class */
+span.text-md {
+    display: none !important;
+}
+
 /* Hide "Made with MyST" footer link with SVG icon */
 a[href="https://mystmd.org/made-with-myst"] {
     display: none !important;
