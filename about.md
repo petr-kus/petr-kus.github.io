@@ -3,7 +3,9 @@
 :::{grid-item}
 ```{figure} /images/petr_kus.jpg
 :width: 100px
-:alt: Petr Kus profile photo
+:alt: Petr Kus profile photo 2024
+
+Petr Kus (2024)
 ```
 :::
 :::{grid-item}

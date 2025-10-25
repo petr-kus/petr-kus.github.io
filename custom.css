@@ -1,0 +1,42 @@
+/* Hide MyST branding elements */
+
+/* Hide "Made with MyST" footer link with SVG icon */
+a[href="https://mystmd.org/made-with-myst"] {
+    display: none !important;
+}
+
+/* Hide "Made with MyST" header/nav link */
+a[href="/"] span:contains("Made with MyST") {
+    display: none !important;
+}
+
+/* Alternative approach - hide by text content */
+a:has(span:contains("Made with MyST")) {
+    display: none !important;
+}
+
+/* Hide any element containing "Made with MyST" text */
+*:contains("Made with MyST") {
+    display: none !important;
+}
+
+/* More specific selectors for the exact elements */
+.flex.mx-auto.text-gray-700.w-fit[href="https://mystmd.org/made-with-myst"] {
+    display: none !important;
+}
+
+.flex.items-center.ml-3.dark\\:text-white.w-fit span:contains("Made with MyST") {
+    display: none !important;
+}
+
+/* Hide parent container if it only contains MyST branding */
+.flex.items-center:has(a[href="https://mystmd.org/made-with-myst"]) {
+    display: none !important;
+}
+
+/* Generic approach to hide any MyST promotional content */
+[class*="myst"]:contains("Made with"),
+[class*="made"]:contains("MyST"),
+*[href*="mystmd.org"] {
+    display: none !important;
+}
