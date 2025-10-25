@@ -11,12 +11,17 @@ project:
 site:
   nav:
     - title: About
-      url: /about
+      url: /index
     - title: Projects
-      url: /projects
+      children:
+        - title: Pytest in Robot Framework
+          url: /projects#pytest-in-robot-framework
+        - title: Test Automation Handbook
+          url: /projects#test-automation-handbook-best-practices-and-common-misconceptions
     - title: Sponsor Me
       url: /sponsor
   template: book-theme
-  # options:
+  options:
+    hide_footer_text: true
   #   favicon: favicon.ico
   #   logo: site_logo.png
