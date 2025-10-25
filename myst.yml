@@ -5,39 +5,24 @@ project:
   title: Petr Kus
   description:
   # keywords: []
-  authors: [Petr Kus]
+  # authors: [Petr Kus]
   github: https://github.com/petr-kus/petr-kus.github.io
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
+  nav:
+      - title: About
+        url: /index
+      - title: Projects
+        children:
+          - title: Pytest in Robot Framework
+            url: /Projects/pytestinrobotframework
+          - title: Test Automation Handbook
+            url: /Projects/Test Automation Handbook/handbook
+      - title: Sponsor Me
+        url: /sponsor
   options:
     hide_footer_text: true
   #   favicon: favicon.ico
   #   logo: site_logo.png
-  locales:
-    - locale: en
-      title: Petr Kus
-      nav:
-        - title: About
-          url: /index
-        - title: Projects
-          children:
-            - title: Pytest in Robot Framework
-              url: /projects#pytest-in-robot-framework
-            - title: Test Automation Handbook
-              url: /projects#test-automation-handbook-best-practices-and-common-misconceptions
-        - title: Sponsor Me
-          url: /sponsor
-    - locale: cs
-      title: Petr Kus
-      nav:
-        - title: O mně
-          url: /cs/index
-        - title: Projekty
-          children:
-            - title: Pytest v Robot Framework
-              url: /cs/projects#pytest-v-robot-framework
-            - title: Příručka Test Automation
-              url: /cs/projects#prirucka-test-automation-best-practices-a-obvykle-mylne-predstavy
-        - title: Podpořte mě
-          url: /cs/sponsor
+    
