@@ -16,9 +16,9 @@ site:
       - title: Projects
         children:
           - title: Pytest in Robot Framework
-            url: /Projects/pytestinrobotframework
+            url: /pytestinrobotframework
           - title: Test Automation Handbook
-            url: /Projects/handbook
+            url: /handbook
       - title: Support Me
         url: /support
   options:
