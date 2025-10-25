@@ -12,13 +12,13 @@ site:
   template: book-theme
   nav:
       - title: About
-        url: /about
+        url: /
       - title: Projects
         children:
           - title: Pytest in Robot Framework
             url: /Projects/pytestinrobotframework
           - title: Test Automation Handbook
-            url: '/Projects/Test Automation Handbook/handbook'
+            url: /Projects/handbook
       - title: Support Me
         url: /support
   options:

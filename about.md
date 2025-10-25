@@ -1,11 +1,13 @@
 # About
+
+## Author
 ::::{grid} 2
 :::{grid-item}
 ```{figure} /images/petr_kus.jpg
 :width: 100px
 :alt: Petr Kus profile photo 2024
-
-Petr Kus (2024)
+:align: right
+Petr Kus (2025)
 ```
 :::
 :::{grid-item}
@@ -13,5 +15,5 @@ QA specialist and test automation educator focusing on Robot Framework, PyTest a
 :::
 ::::
 
-# This Page
+## This Page
 This page serves to showcase my personal projects in one place and to create a comprehensive Test Automation Handbook covering best practices, common misconceptions, and theoretical foundations of testing and test automation.
