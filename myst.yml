@@ -18,7 +18,7 @@ site:
           - title: Pytest in Robot Framework
             url: /Projects/pytestinrobotframework
           - title: Test Automation Handbook
-            url: '/Projects/Test Automation Handbook/handbook
+            url: '/Projects/Test Automation Handbook/handbook'
       - title: Support Me
         url: /support
   options:
@@ -26,4 +26,3 @@ site:
     style: custom.css
   #   favicon: favicon.ico
   #   logo: site_logo.png
-    
