@@ -3,7 +3,7 @@
 ## Author
 ::::{grid} 2
 :::{grid-item}
-```{figure} /images/petr_kus_trasnparent.jpg
+```{figure} /images/petr_kus_transparent.png
 :width: 100px
 :alt: Petr Kus profile photo 2024
 :align: right
