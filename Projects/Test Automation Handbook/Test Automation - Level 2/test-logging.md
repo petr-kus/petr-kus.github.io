@@ -1,5 +1,5 @@
 (test-logging)=
-# Test Logging Using Python Logger and Caplog Usage
+# Test Logging
 
 (Currently only hinted at in the example - not used everywhere and fully)
 

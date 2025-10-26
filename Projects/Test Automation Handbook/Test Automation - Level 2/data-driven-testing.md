@@ -1,5 +1,5 @@
 (data-driven-testing)=
-# Using Pytest Parametrization for Data-Driven Test Approach/Pattern
+# Data-Driven Testing
 
 **Data-Driven Test** - consumes data from a table (can include expected results, not just input parameters). It repeatedly tries the written scenario for all values from the given table. Adding another test case involves only adding another row with input and expected output data to the table.
 

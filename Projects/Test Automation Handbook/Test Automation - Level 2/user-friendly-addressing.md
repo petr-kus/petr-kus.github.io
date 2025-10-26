@@ -1,5 +1,5 @@
 (user-friendly-addressing)=
-# User-Friendly Addressing Method
+# User-Friendly Addressing
 
 "Soft addressing" using relative XPATH is also used in one place, exactly according to what the user sees on screen (based on the text 'Logout' in the dropdown menu).
 - This tests the given thing as a user would read it (if the text changes => it finds the error)

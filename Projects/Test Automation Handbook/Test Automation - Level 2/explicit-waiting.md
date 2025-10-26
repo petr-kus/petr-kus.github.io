@@ -1,5 +1,5 @@
 (explicit-waiting)=
-# Explicit Waiting for Dynamic Page Elements
+# Explicit Waiting
 
 We specifically wait for an element that might not be visible if the page responds slowly. The element is not tied to the loading of the entire page - it's a dynamic thing (slide-out menu on the left side). Therefore, explicit waiting makes sense here. For most elements on this page, we can get by with implicit waiting or a complete loading strategy.
 

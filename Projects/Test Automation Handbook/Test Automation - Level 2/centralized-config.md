@@ -1,5 +1,5 @@
 (centralized-config)=
-# Centralization of Addressing, Methods, and Page Parameterization
+# Centralized Configuration
 
 Simply put, we place repetitive things into variables so they can be set in a clear, centralized manner and controlled without having to rewrite them across multiple lines. When there's really a lot of them, external configuration files can be used.
 

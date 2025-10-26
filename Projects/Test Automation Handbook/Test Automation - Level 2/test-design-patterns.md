@@ -1,5 +1,5 @@
 (test-design-patterns)=
-# Test Design for Login/Logout Verification
+# Test Design Patterns
 
 Multiple assertions are used in sequence without any problem, even for different things. Cross-verification of something in several ways.
 

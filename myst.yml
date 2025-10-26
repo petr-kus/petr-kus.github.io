@@ -8,6 +8,21 @@ project:
   # authors: [Petr Kus]
   github: https://github.com/petr-kus/petr-kus.github.io
   # To autogenerate a Table of Contents, run "myst init --write-toc"
+  toc:
+    - file: about.md
+    - file: Projects/pytestinrobotframework.md
+    - file: Projects/Test Automation Handbook/handbook.md
+      children:
+        - file: Projects/Test Automation Handbook/Test Automation - Level 2/ta_level_2.md
+          children:
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/pom-pattern.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/centralized-config.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/user-friendly-addressing.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/explicit-waiting.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/data-driven-testing.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/test-design-patterns.md
+            - file: Projects/Test Automation Handbook/Test Automation - Level 2/test-logging.md
+    - file: support.md
 site:
   template: book-theme
   nav:

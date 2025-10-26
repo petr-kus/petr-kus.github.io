@@ -1,5 +1,5 @@
 (pom-pattern)=
-# POM - Page Object Model
+# Page Object Model
 
 In the test file (test.py), you'll find these related lines:
 ```python
