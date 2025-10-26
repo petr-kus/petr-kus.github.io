@@ -3,15 +3,14 @@
 ## Author
 ::::{grid} 2
 :::{grid-item}
-```{figure} /images/petr_kus.jpg
+```{figure} /images/petr_kus_trasnparent.jpg
 :width: 100px
 :alt: Petr Kus profile photo 2024
 :align: right
 ```
 :::
 :::{grid-item}
-QA specialist and test automation educator currently focusing on Robot Framework, PyTest and more. With hands-on experience across diverse fields such as security, networking, and scientific applications, I bring practical insights from real-world testing challenges.
-:::
+QA specialist and test automation educator currently focusing on Robot Framework, PyTest and more. With hands-on experience across diverse fields such as security, networking, and scientific applications.
 ::::
 
 🧑‍💻 QA specialist with over a decade of experience, starting in 2010. I've worked across diverse fields such as security, networking, and scientific applications, testing desktop, mobile, and web applications, as well as firmware closely tied to hardware.
