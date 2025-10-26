@@ -16,49 +16,63 @@ This level based approach also leads to a deep understanding of the practices us
 
 For this purpose, I divide time periods and approaches into different automation levels to easily describe the historical evolution:
 
-::::{grid} 1 1 2 3
-:gutter: 2
+::::{grid} 1
+:gutter: 3
 
 (level-0)=
-:::{grid-item-card} Level 0
+:::{grid-item-card} Plain Scripts
 :class-header: bg-light
-Mostly plain test scripts where "everything" is mixed together
+
+**Focus:** Everything mixed together  
+**Technologies:** Basic scripting, manual test conversion
 :::
 
 (level-0-5)=
-:::{grid-item-card} Level 0.5
+:::{grid-item-card} Record & Play
 :class-header: bg-light
-Record & Play (you could argue this falls somewhere between levels 0.5-1.5 depends on the used tool)
+
+**Focus:** Automated recording of user interactions  
+**Technologies:** Selenium IDE, commercial record/replay tools
 :::
 
 (level-1)=
-:::{grid-item-card} Level 1
+:::{grid-item-card} Code Structure
 :class-header: bg-light
-Start using structures - focus towards "code structure" (identifiers grouped together, error handling, result handling... first use of "script" test frameworks such as unit test frameworks, pytest that makes easier and more general test scripting etc.)
+
+**Focus:** Organized code with proper structure  
+**Technologies:** Unit test frameworks, pytest, basic error handling
 :::
 
 (level-2)=
-:::{grid-item-card} Level 2
+:::{grid-item-card} Test Structure
 :class-header: bg-light
-Focused deeply towards "test structure" for better maintainability and understandability (use of Domain Language, POM - Page Object Model, BDD/DSL/"keyword-driven" test frameworks, Data-Driven test cases, etc.)
+
+**Focus:** Maintainable and understandable test design  
+**Technologies:** POM, BDD/DSL, keyword-driven frameworks, data-driven testing
 :::
 
 (level-3)=
-:::{grid-item-card} Level 3
+:::{grid-item-card} Test Execution
 :class-header: bg-light
-Focus towards "test execution" to aim better coverage in shorter time (MBT - Model-Based Testing, random order of tests, property testing, fuzz tests)
+
+**Focus:** Better coverage in shorter time  
+**Technologies:** Model-Based Testing, property testing, fuzz testing, parallel execution
 :::
 
 (level-4)=
-:::{grid-item-card} Level 4
+:::{grid-item-card} Test Generation
 :class-header: bg-light
-Focus towards "test generation" (MBT, fuzz test, AI agents, auto generation tests from specification, reuse Data-Driven etc.)
+
+**Focus:** Automated test creation and generation  
+**Technologies:** AI agents, specification-based generation, advanced MBT, auto data-driven
 :::
 
 (level-5)=
-:::{grid-item-card} Level 5
+:::{grid-item-card} Future Level
 :class-header: bg-light
-(To be defined)
+
+**Focus:** To be defined  
+**Technologies:** Emerging approaches and methodologies
 :::
 
 ::::
