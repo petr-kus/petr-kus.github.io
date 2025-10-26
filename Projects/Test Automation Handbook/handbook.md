@@ -16,28 +16,52 @@ This level based approach also leads to a deep understanding of the practices us
 
 For this purpose, I divide time periods and approaches into different automation levels to easily describe the historical evolution:
 
-(automation-levels)=
+::::{grid} 1 1 2 3
+:gutter: 2
 
 (level-0)=
-- **Level 0** - Mostly plain test scripts where "everything" is mixed together
+:::{grid-item-card} Level 0
+:class-header: bg-light
+Mostly plain test scripts where "everything" is mixed together
+:::
 
 (level-0-5)=
-- **Level 0.5** - Record & Play (you could argue this falls somewhere between levels 0.5-1.5 depends on the used tool)
+:::{grid-item-card} Level 0.5
+:class-header: bg-light
+Record & Play (you could argue this falls somewhere between levels 0.5-1.5 depends on the used tool)
+:::
 
 (level-1)=
-- **Level 1** - Start using structures - focus towards "code structure" (identifiers grouped together, error handling, result handling... first use of "script" test frameworks such as unit test frameworks, pytest that makes easier and more general test scripting etc.) → See {ref}`building-foundations`
+:::{grid-item-card} Level 1
+:class-header: bg-light
+Start using structures - focus towards "code structure" (identifiers grouped together, error handling, result handling... first use of "script" test frameworks such as unit test frameworks, pytest that makes easier and more general test scripting etc.)
+:::
 
 (level-2)=
-- **Level 2** - Focused deeply towards "test structure" for better maintainability and understandability (use of Domain Language, POM - Page Object Model, BDD/DSL/"keyword-driven" test frameworks, Data-Driven test cases, etc.) → Related: {ref}`research-warning`
+:::{grid-item-card} Level 2
+:class-header: bg-light
+Focused deeply towards "test structure" for better maintainability and understandability (use of Domain Language, POM - Page Object Model, BDD/DSL/"keyword-driven" test frameworks, Data-Driven test cases, etc.)
+:::
 
 (level-3)=
-- **Level 3** - Focus towards "test execution" to aim better coverage in shorter time (MBT - Model-Based Testing, random order of tests, property testing, fuzz tests)
+:::{grid-item-card} Level 3
+:class-header: bg-light
+Focus towards "test execution" to aim better coverage in shorter time (MBT - Model-Based Testing, random order of tests, property testing, fuzz tests)
+:::
 
 (level-4)=
-- **Level 4** - Focus towards "test generation" (MBT, fuzz test, AI agents, auto generation tests from specification, reuse Data-Driven etc.)
+:::{grid-item-card} Level 4
+:class-header: bg-light
+Focus towards "test generation" (MBT, fuzz test, AI agents, auto generation tests from specification, reuse Data-Driven etc.)
+:::
 
 (level-5)=
-- **Level 5** - (To be defined)
+:::{grid-item-card} Level 5
+:class-header: bg-light
+(To be defined)
+:::
+
+::::
 
 (building-foundations)=
 ```{tip} **Building on Foundations**
@@ -60,12 +84,12 @@ What I observe even more frequently is the poor utilization of existing technolo
 - {ref}`research-warning` - Always research before building custom solutions
 
 ### Automation Levels
-- {ref}`level-0` - Plain scripts with everything mixed together
-- {ref}`level-1` - Code structure, basic frameworks and code maintability patterns
-- {ref}`level-2` - Test structure, advanced frameworks and test maintainability patterns  
-- {ref}`level-3` - Test execution optimization
-- {ref}`level-4` - Test auto-generation approaches
-- {ref}`level-5` - Future developments?
+- {ref}`Level 0 <level-0>` - Plain scripts with everything mixed together
+- {ref}`Level 1 <level-1>` - Code structure, basic frameworks and code maintainability patterns
+- {ref}`Level 2 <level-2>` - Test structure, advanced frameworks and test maintainability patterns  
+- {ref}`Level 3 <level-3>` - Test execution optimization
+- {ref}`Level 4 <level-4>` - Test auto-generation approaches
+- {ref}`Level 5 <level-5>` - Future developments?
 
 ```{seealso}
 For practical examples of these concepts in action, explore the detailed guides for each automation level.
