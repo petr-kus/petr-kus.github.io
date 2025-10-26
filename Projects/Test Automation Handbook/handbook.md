@@ -22,64 +22,64 @@ For this purpose, I divide time periods and approaches into different automation
 (level-0)=
 :::{grid-item-card} Level 0 - Plain Scripts
 :class-header: bg-light
-**Implementation:** everything mixed together in one or more scripts
-**Focus:** easy and fast implementation, to have test automation
-**Example ~** simple scripting, direct manual test conversion to a program
+**Implementation:** everything mixed together in one or more scripts  
+**Focus:** easy and fast implementation, to have test automation  
+**Example ~** simple scripting, direct manual test conversion to a program  
 **Disadvantage ~** bad maintenance, not clear what is tested and how, changes take longer time ...
 :::
 
 (level-0-5)=
 :::{grid-item-card} Level 0.5 - Record & Play
 :class-header: bg-light
-**Implementation:** automated recording of user interactions
+**Implementation:** automated recording of user interactions  
 **Focus:** easy and fast implementation, to have test automation  
-**Example ~** Selenium IDE, commercial record/replay tools
-**Disadvantage ~** really difficult changes, bad maintenance, not clear what is tested and how, ...
+**Example ~** Selenium IDE, commercial record/replay tools  
+**Disadvantage ~** really difficult changes, bad maintenance, not clear what is tested and how, ...  
 Can be discussed somewhere between 0.5 - 1.5 depending on maturity of specific technology.
 :::
 
 (level-1)=
 :::{grid-item-card} Level 1 - Code Structure
 :class-header: bg-light
-**Implementation:** writing very well structured scripts
-**Focus:** write maintainable test code, minimize copy-paste code
-**Example ~** unit test frameworks, pytest
+**Implementation:** writing very well structured scripts  
+**Focus:** write maintainable test code, minimize copy-paste code  
+**Example ~** unit test frameworks, pytest  
 **Disadvantage ~** long test-related analysis (what is tested, how), long failure analysis, often disconnection between what test declares to test and what is tested in reality, ...
 :::
 
 (level-2)=
 :::{grid-item-card} Level 2 - Test Structure
 :class-header: bg-light
-**Implementation:** build script structures based on domain language (DL)
-**Focus:** write maintainable and understandable test design
-**Example ~** POM, BDD/DSL, keyword-driven frameworks, data-driven testing, pytest (with POM/BDD/DL)
+**Implementation:** build script structures based on domain language (DL)  
+**Focus:** write maintainable and understandable test design  
+**Example ~** POM, BDD/DSL, keyword-driven frameworks, data-driven testing, pytest (with POM/BDD/DL)  
 **Disadvantage ~** skills to define DL needed (not common in development at the time), problems to cover big test spaces (combinations, order of actions etc.), sometimes longer development of good tests (skills needed)
 :::
 
 (level-3)=
 :::{grid-item-card} Level 3 - Test Execution/Development Optimization
 :class-header: bg-light
-**Implementation:** build script/model/pattern that generates test cases or test flows
-**Focus:** better coverage in shorter time (development/execution)
-**Example ~** Model-Based Testing, property testing, fuzz testing, test randomization, AI agents
+**Implementation:** build script/model/pattern that generates test cases or test flows  
+**Focus:** better coverage in shorter time (development/execution)  
+**Example ~** Model-Based Testing, property testing, fuzz testing, test randomization, AI agents  
 **Disadvantage ~** skills to define models, patterns, randomization needed (not common in development at the time), many technologies don't combine well Level 2 with Level 3 approaches (at the time), bad connection between Level 2 and Level 3 leads to emerging again some issues from Level 1 - long test-related analysis, long failure analysis, disconnection between what test declares to test and what is actually tested
 :::
 
 (level-4)=
 :::{grid-item-card} Level 4 - Test Generation
 :class-header: bg-light
-**Implementation:** build set of action/verification steps and/or test description (model, specification...)
-**Focus:** automate majority of test design phase (creation and generation) 
-**Example ~** AI agents, specification-based generation, advanced MBT where model is specification also for development, maybe some data-driven testing
+**Implementation:** build set of action/verification steps and/or test description (model, specification...)  
+**Focus:** automate majority of test design phase (creation and generation)  
+**Example ~** AI agents, specification-based generation, advanced MBT where model is specification also for development, maybe some data-driven testing  
 **Disadvantage ~** skills needed, no existing common frameworks (at the time), bad connection with previous levels will lead to emerging previous disadvantages
 :::
 
 (level-5)=
 :::{grid-item-card} Level 5 - Future Level
 :class-header: bg-light
-**Implementation:** To be defined
-**Focus:** To be defined
-**Example ~** Emerging approaches and methodologies
+**Implementation:** To be defined  
+**Focus:** To be defined  
+**Example ~** Emerging approaches and methodologies  
 **Disadvantage ~** To be discovered
 :::
 
