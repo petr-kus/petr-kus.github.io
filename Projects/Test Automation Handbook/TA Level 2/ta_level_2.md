@@ -1,6 +1,6 @@
 # Test Automation (Level 2)
 
-This example demonstrates how test automation is typically written when you're at approximately Test Automation Level 2. It's a showcase that doesn't cover everything, but rather shows the direction and comments on the techniques used.
+This example demonstrates how test automation is typically written when you're at approximately Test Automation Level 2. It's a showcase that doesn't cover extensive page functionality, but rather demonstrates the direction and provides commentary on the test automation techniques and patterns used.
 
 The example uses the test website saucedemo.com as the test project.
 
