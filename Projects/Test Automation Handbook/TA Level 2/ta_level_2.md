@@ -51,7 +51,7 @@ Page Object Model implementation for navigation menu interactions.
 ```{tab-item} test.py
 :sync: test-py
 
-```python
+~~~python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time 
@@ -97,7 +97,6 @@ def Browser():
     logging.info(f"Browser closed")
 
 @pytest.fixture()
-def login_page():
     login_page = "https://www.saucedemo.com/"
     logging.debug(f"Going to login page '{login_page}'")
     browser.get(login_page)
@@ -130,10 +129,6 @@ class TestWebPage:
         loginPage = LoginPage(browser)
         menu = Menu(browser)
 
-        #DIFFERENT SOLUTION - possible add drver also to Page Object Model
-        #browser = Browser(driver)
-        #browser.go_to_page(test_page)
-
         browser.get(self.test_page)
         slowdown()
         loginPage.login(loginame, password)
@@ -145,8 +140,6 @@ class TestWebPage:
         browser.get(self.test_page_inventory)
         assert self.test_page == browser.current_url
         assert browser.find_element(*self.login_error_box)
-
-        #TODO: passing also for performance glitch user - shoudl not - have to be added verifictaion for performance
 
     @pytest.mark.parametrize("loginame, password", [("locked_out_user", "secret_sauce")])
     def test_Unsuccessful_Login(self, loginame, password):
@@ -160,7 +153,6 @@ class TestWebPage:
         assert "inventory" not in browser.current_url
         assert browser.find_element(*self.login_error_box)
 
-    #Approach with usage fixture nad yield for teardown (logout)
     @pytest.mark.parametrize("loginame, password", 
                             [("standard_user", "secret_sauce"), 
                             ("problem_user", "secret_sauce"), 
@@ -174,12 +166,13 @@ class TestWebPage:
         loginPage.login(loginame, password)
         slowdown()
         assert "inventory" in browser.current_url
-```
+~~~
 ```
 
 ```{tab-item} Browser.py
 :sync: browser-py
-```python
+
+~~~python
 class Browser:
     def __init__(self,driver):
         self.driver = driver
@@ -189,19 +182,53 @@ class Browser:
     
     def page(self):
         return self.driver.current_url
-```
+~~~
 ```
 
 ```{tab-item} LoginPage.py
 :sync: loginpage-py
 
-Page Object Model implementation for the login page functionality.
+~~~python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+class LoginPage:
+
+    password_field = (By.ID,'password')
+    login_name_field = (By.ID,'user-name')
+    login_button = (By.ID,'login-button')
+
+    def __init__(self,driver):
+        self.driver = driver
+        
+    def login(self,name,password):
+        self.driver.find_element(*self.login_name_field).send_keys(name)
+        self.driver.find_element(*self.password_field).send_keys(password)
+        self.driver.find_element(*self.login_button).click()
+~~~
 ```
 
 ```{tab-item} Menu.py
 :sync: menu-py
 
-Page Object Model implementation for navigation menu interactions.
+~~~python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+class Menu:
+    
+    hamburger_menu = (By.ID,"react-burger-menu-btn")
+    logout_button = (By.XPATH,"//nav/*[text()='Logout']")
+
+    def __init__(self,driver):
+        self.driver = driver
+
+    def logout(self):
+        self.driver.find_element(*self.hamburger_menu).click()
+        WebDriverWait(self.driver,2).until(EC.visibility_of_element_located(self.logout_button)).click()
+~~~
 ```
 ````
 
